@@ -4,7 +4,7 @@
 * starting from 0, followed by a new line
 * Return: Always 0
 */
-in main(void)
+int main(void)
 {
 	char le;
 
