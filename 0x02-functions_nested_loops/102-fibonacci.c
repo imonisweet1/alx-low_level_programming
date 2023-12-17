@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Prints the first 52 fibonacci numbers
- * return: Nothing
+ * main - Entry point of the program
+ * Description: Prints the first 50 Fibonacci number
+ * The sequence starts with 1 and 2
+ *
+ * Return: Always 0 (success)
  */
 
 int main(void)
