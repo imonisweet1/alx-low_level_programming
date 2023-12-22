@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point of the program
- * Prints: The sum of the even-valued terms
- * considering values not exceeding 4000000
- * followed by a new line
- * Returns: Always 0 (success)
+ * main - the main printing funtion
+ * less than 4000000.
+ * Return: 0.
  */
 
 int main(void)
