@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * reverse_array - reverses array of integers
  * @a: array
@@ -8,14 +8,16 @@
  */
 void reverse_array(int *a, int n)
 {
-	int i;
-	int j;
+	int swap, begin, end;
 
-	for (i = 0; i < n; i++;)
+	begin = 0;
+	end = n - 1;
+	while (begin < end)
 	{
-		n--;
-		j = a[i];
-		a[i] = a[n];
-		a[n] = j;
+		swap = *(a + begin);
+		*(a + begin) = *(a + end);
+		*(a + end) = swap;
+		begin++;
+		end--;
 	}
 }
