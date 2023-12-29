@@ -4,24 +4,26 @@
 /**
  * leet - encodes a string into 1337
  * @n: input
- * Return: the value of n
+ * Return: the value of s
  */
-char *leet(char *n)
+char *leet(char *s)
 {
-	int i, j;
-	char s1[] = "aAeEoOtTlL";
-	char s2[] = "4433007711";
+	char a[] = "aeotlAEOTL";
+	char n[] = "4307143071";
+	int i = 0;
+	int j;
 
-	for (i = 0; n[i] != '\0'; i++)
+	while (*(s + i) != '\0')
 	{
-		for (j = 0; j < 10; j++)
-		{
-			if (n[i] == s1[j])
-			{
-				n[i] = s2[j];
-			}
-		}
+	for (j = 0; j <= 9; j++)
+	{
+	if (*(s + i) == a[j])
+	{
+		*(s + i) = n[j];
 	}
-	return (n);
+	}
+	i++;
+	}
+	return (s);
 }
-
+	
