@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdio>
-
 /**
- * leet - encodes a string into 1337
- * @n: input
- * Return: the value of s
+ * leet - encodes a string into 1337.
+ * @s: Analized strings.
+ * Return: the value of s.
  */
 char *leet(char *s)
 {
@@ -26,4 +25,3 @@ char *leet(char *s)
 	}
 	return (s);
 }
-	
