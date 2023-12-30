@@ -5,23 +5,21 @@
  * @s: Analized strings.
  * Return: the value of s.
  */
-char *leet(char *s)
+char *leet(char *n)
 {
-	char a[] = "aeotlAEOTL";
-	char n[] = "4307143071";
-	int i = 0;
-	int j;
+	int i, j;
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
 
-	while (*(s + i) != '\0')
+	for (i = 0; n[i] != '\0'; i++)
 	{
-	for (j = 0; j <= 9; j++)
-	{
-	if (*(s + i) == a[j])
-	{
-		*(s + i) = n[j];
+		for (j = 0; j < 10; j++)
+		{
+			if (n[i] == s1[j])
+			{
+				n[i] = s2[j];
+			}
+		}
 	}
-	}
-	i++;
-	}
-	return (s);
+	return (n);
 }
